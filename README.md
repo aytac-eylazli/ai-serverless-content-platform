@@ -33,16 +33,30 @@ The application integrates AWS Lambda, Amazon API Gateway, Amazon DynamoDB, Amaz
 
 ## Architecture
 
-Coming soon...
-
----
+```text
+User
+   │
+   ▼
+AWS Amplify (React Frontend)
+   │
+   ▼
+Amazon API Gateway
+   │
+   ▼
+AWS Lambda
+   ├────────────► Amazon DynamoDB
+   │
+   └────────────► Amazon Bedrock
+```
 
 ## Project Structure
 
-```
-lambda/
-frontend/
-README.md
+```text
+.
+├── README.md
+├── architecture/
+├── screenshots/
+└── docs/
 ```
 
 ---
